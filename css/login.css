@@ -1,0 +1,258 @@
+* { 
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+body { 
+    caret-color: transparent;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #fff    ;
+    ;
+    /* width: 10%; */ 
+   
+}
+h1 { 
+
+}
+
+header  { 
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 50%; */
+    /* background: #000; */
+}
+div.wrapper { 
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 65px;
+    background: #0b9796;
+    border-radius: 50px;
+    margin-top: 44px;
+}
+
+header div.wrapper .left { 
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+
+
+}
+
+header div.wrapper .left img { 
+    filter:brightness(9);
+    margin-right: 5px;
+    width:17px;
+    height: 25px;
+   
+}
+
+header div.wrapper .left img:hover { 
+    filter:brightness(0);
+    /* margin-right: 5px; */
+    width:17px;
+    height: 25px;
+    transition: all .5s;
+    /* color: #fd8104; */
+}
+
+header div.wrapper .left h1 { 
+
+}
+
+header div.wrapper .left h1 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header div.wrapper .left h1 a:hover { 
+    color: #000;
+    width: 115px;
+    transition: all 0.4s;
+    /* color: #fd8104; */
+}
+
+header div.wrapper .right { 
+
+}
+
+header div.wrapper .right a {
+    color: #fff;
+    margin-right: 20px;
+}
+header div.wrapper .right a:hover { 
+    color: #000;
+    width: 115px;
+    transition: all 0.4s;;
+    /* color: #fd8104; */
+}
+
+#spotlight .middle { 
+
+}
+
+#spotlight .middle .top { 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+align-items: center;
+
+}
+
+#spotlight .middle .top h1 { 
+    margin-top: 84px;
+color: #686868;
+}
+
+#spotlight .middle .top h3 { 
+    margin-top: 5px;
+    margin-bottom: 50px;
+    color: #686868 ;
+
+}
+
+#spotlight .middle .botoom { 
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   z-index: 2;
+}
+
+#spotlight .middle .botoom button { 
+    /* position: relative; */
+    margin-top: 90px;
+    border-radius: 50px;
+    width: 285px;
+    height: 60px;
+    border-color: #0b9796;
+    /* background: #fff; */
+    z-index: 2;
+
+}
+
+#spotlight .middle .botoom button a { 
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+   z-index: 2;
+    
+}
+
+#spotlight .middle .botoom button:hover { 
+    background: #0b9796;
+    transition: all 0.4s;
+    /* color: #fd8104; */
+   z-index: 2;
+
+}
+
+#spotlight .bottom { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#spotlight .bottom .wrtapper { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: zoomIn 3s  ; */
+    transition-timing-function:linear;
+
+}
+
+#spotlight .bottom .wrtapper img#girl { 
+    position: relative;
+    /* left: 1074px; */
+    bottom: 417px;
+    left: 1065px;
+    scale: 0.7;
+    /* width: 395px; */
+    z-index: 1;
+    animation: trans 3s  ;
+
+    
+
+}
+#spotlight .bottom .wrtapper img#shape {
+    position: relative;
+    align-items: center;
+    bottom: 141px;
+    left: 100px;
+    /* width: 1400px; */
+    animation: zoomIn 2s  ;
+    max-width: min-content;
+
+}
+
+#spotlight .bottom .wrtapper img#text {
+    position: relative; 
+    right: 975px; 
+    bottom: 134px;
+    align-items: center;
+    animation: zoomIn 2s  ;
+}
+@keyframes trans {
+    0% {
+      transform: translateY(1000px);
+    }
+    100% {
+      transform: translateY(0); /* Slight zoom effect */
+    }
+  }
+@keyframes zoomIn {
+    0% {
+      transform: scale(.2);
+    }
+    50% {
+      transform: scale();
+    }
+
+    100% {
+
+      transform: scale(1); /* Slight zoom effect */
+    }
+  }
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+    header div.wrapper .left img { 
+        /* filter:brightness(0); */
+    }
+    header div.wrapper .left h1 a {
+        color: #fff;
+    }
+    header div.wrapper .right a {
+        color: #fff;
+    }
+    #spotlight .middle .top h1 { 
+        color: #fff;
+    }
+    #spotlight .middle .top h3 { 
+        color: #fff;
+    }
+    #spotlight .middle .botoom button { 
+        /* background: #0b9796; */
+        outline-color: #0b9796;
+        outline-width: 5px;
+    }
+    #spotlight .middle .botoom button a { 
+        color: #000000;
+    }
+
+}
